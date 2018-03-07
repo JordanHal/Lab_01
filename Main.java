@@ -4,10 +4,12 @@ class Main
    {  
       Pessoa p1 = new Pessoa();
       p1.setNome("Ana");
+      p1.setIdade(18);
       Pessoa p2 = new Pessoa();
       p2.setNome("João");
-      System.out.println("Nome1:"+p1.getNome());
-      System.out.println(p2.getNome());
+      p1.setIdade(15);
+      System.out.println("Nome1:"+p1.getNome()+"\nIdade:"+p1.getIdade());
+      System.out.println(p2.getNome()+p2.getIdade());
       
    }
 }
