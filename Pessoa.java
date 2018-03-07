@@ -3,18 +3,11 @@ class Pessoa
 	String nome;
 	int idade;
 
-
-
-	void setNome(String p_nome)
+	public Pessoa( String p_nome, int p_idade)
 	{
 		nome = p_nome;
-	}
-
-	void setIdade(int p_idade)
-	{
 		idade = p_idade;
 	}
-
 
 	String getNome()
 	{
@@ -24,5 +17,10 @@ class Pessoa
 	int getIdade()
 	{
 		return idade;
+	}
+
+	String dados()
+	{
+		return "Nome:"+this.getNome()+", Idade:"+this.getIdade();
 	}
 }
