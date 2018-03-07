@@ -1,27 +1,21 @@
 class Pessoa
-
 {
 	String nome;
 	int idade;
 
-	void setNome(String pnome)
+	public Pessoa( String p_nome, int p_idade)
 	{
-    		nome = pnome;
+		nome = p_nome;
+		idade = p_idade;
 	}
-	
-	void setIdade(int pidade)
-	{
-		idade = pidade;
-	}
-	
+
 	String getNome()
 	{
 		return nome;
 	}
-	
+
 	int getIdade()
 	{
 		return idade;
 	}
-
-} 
+}
